@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: inter Arial, Helvetica, sans-serif;
+  font-family: inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
   line-height: 1.5;
   font-size: 1.8rem;
@@ -70,5 +70,32 @@ a {
 @media screen and (max-width: 768px) {
   .link-arrow {
     font-size: 2rem;
+  }
+}
+
+/* badger */
+.badger {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.badger--primary {
+  background-color: var(--color-primary);
+}
+.badger--secondary {
+  background-color: var(--color-secondary);
+}
+.badger--small {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .badger {
+    font-size: 2rem;
+  }
+  .badger--small {
+    font-size: 1.6rem;
   }
 }
