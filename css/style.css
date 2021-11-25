@@ -73,7 +73,7 @@ a {
   }
 }
 
-/* badger */
+/* badgers */
 .badger {
   font-size: 1.5rem;
   font-weight: 600;
@@ -97,5 +97,29 @@ a {
   }
   .badger--small {
     font-size: 1.6rem;
+  }
+}
+
+/* lists */
+.list {
+  list-style: none;
+  color: var(--color-heading);
+  padding-left: 0;
+}
+.list--incline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+.list--tick .list__item {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .list--tick .list__item {
+    padding-left: 0.5rem;
   }
 }
