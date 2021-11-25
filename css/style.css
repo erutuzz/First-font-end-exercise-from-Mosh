@@ -196,3 +196,34 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/* input */
+.input {
+  padding: 1.5rem 3rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: 1.5rem;
+  color: var(--color-heading);
+}
+::placeholder {
+  color: #b4b2c4;
+}
+.input-group {
+  border-color: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  outline: 0;
+}
+.input-group .btn {
+  margin: 4px;
+}
+@media screen and (max-width: 768px) {
+  .input {
+    font-size: 2rem;
+  }
+}
