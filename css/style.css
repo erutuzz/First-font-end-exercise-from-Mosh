@@ -1,12 +1,15 @@
-html {
-  font-size: 62.5%;
-}
+/* color */
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+}
+
+/* typography */
+html {
+  font-size: 62.5%;
 }
 body {
   font-family: inter Arial, Helvetica, sans-serif;
@@ -44,5 +47,28 @@ p {
   }
   h3 {
     font-size: 3rem;
+  }
+}
+
+/* links */
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.2s;
+}
+.link-arrow:hover::after {
+  margin-left: 8px;
+}
+@media screen and (max-width: 768px) {
+  .link-arrow {
+    font-size: 2rem;
   }
 }
