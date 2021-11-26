@@ -151,6 +151,16 @@ a {
   justify-content: center;
   align-items: center;
 }
+.icon-container--accent {
+  background-color: var(--color-accent);
+}
+.icon--white {
+  fill: #fff;
+}
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
 
 /* button */
 .btn {
@@ -377,4 +387,23 @@ a {
   .grid--1x3 {
     grid-template-columns: 100%;
   }
+}
+
+/* testimonial quote */
+.testimonial {
+  padding: 3rem;
+}
+.quote {
+  padding: 3rem;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > img {
+  width: 100%;
+}
+.testimonial__image > span {
+  position: absolute;
+  top: 30px;
+  right: -30px;
 }
