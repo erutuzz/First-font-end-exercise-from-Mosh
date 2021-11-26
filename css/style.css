@@ -11,6 +11,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --colore-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -324,4 +325,39 @@ a {
 }
 .media__title {
   margin-top: 0;
+}
+
+/* quote */
+.quote__content {
+  font-style: italic;
+  font-size: 2.4rem;
+  color: var(--colore-body-darker);
+}
+.quote__content::before {
+  content: open-quote;
+}
+.quote__content::after {
+  content: close-quote;
+}
+.quote__image {
+  position: relative;
+  bottom: 15px;
+}
+.quote__name {
+  /* font-family: Montserrat, Arial; */
+  margin-bottom: 0;
+}
+.quote__vocation {
+  opacity: 0.4;
+}
+@media screen and (max-width: 768px) {
+  .quote__content {
+    font-size: 3rem;
+  }
+  .quote__name {
+    font-size: 3rem;
+  }
+  .quote__vocation {
+    font-size: 2rem;
+  }
 }
