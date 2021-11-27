@@ -203,6 +203,10 @@ a {
   display: inline-block;
   width: 100%;
 }
+.btn--streched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--outline:hover {
   background-color: var(--color-heading);
   color: #fff;
@@ -406,4 +410,38 @@ a {
   position: absolute;
   top: 30px;
   right: -30px;
+}
+
+/* callout */
+.callout {
+  padding: 3rem;
+  border-radius: 5px;
+}
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+}
+.callout__btn {
+  justify-self: start;
+  align-self: center;
+  margin: 0 5rem;
+}
+.callout .grid--1x2 {
+  grid-template-columns: 1fr auto;
+}
+@media screen and (max-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 100%;
+  }
+  .callout__content {
+    text-align: center;
+  }
+  .callout__btn {
+    justify-self: center;
+    align-self: center;
+  }
 }
