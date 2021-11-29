@@ -262,6 +262,7 @@ a {
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f1f5f6;
+  transition: transform 0.3s ease-out;
   /* overflow: hidden; */
 }
 .card .badger {
@@ -285,6 +286,15 @@ a {
 .card--secondary .card__header {
   background-color: var(--color-secondary);
   color: #fff;
+}
+.card--popular {
+  transform: scale(1.1);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card--popular:hover {
+  transform: scale(1.15);
 }
 .card--popular .card__header {
   position: relative;
@@ -614,4 +624,14 @@ a {
     justify-items: center;
     white-space: nowrap;
   }
+}
+
+/* plan block */
+.block-plan {
+  margin: 4rem 3rem;
+  gap: 8rem 5rem;
+}
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
