@@ -635,3 +635,24 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* feacture block */
+.block-feacture {
+  margin: 6rem auto;
+  gap: 4rem 2rem;
+}
+
+.feature__content > h3 {
+  margin: 1rem 0;
+}
+.feature__content > p {
+  margin-bottom: 2rem;
+}
+.feature__fig {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .block-feacture:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
