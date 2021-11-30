@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Delopy my website" />
+    <title>WW - first exercise</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -186,7 +187,7 @@
             srcset="images/fast@1x.webp 1x, images/fast@2x.webp 2x" />
           <source
             type="image/png"
-            srcset="images/fast@1x.png 1x, images/fast@2x.png 2x" />
+            srcset="images/fast@1x.jpg 1x, images/fast@2x.jpg 2x" />
           <img class="feature__fig" src="images/fast.jpg" alt=""
         /></picture>
       </article>
@@ -210,8 +211,8 @@
             srcset="images/wordpress@1x.webp 1x, images/wordpress@2x.webp 2x" />
           <source
             type="image/png"
-            srcset="images/wordpress@1x.png 1x, images/wordpress@2x.png 2x" />
-          <img class="feature__fig" src="images/wordpress.jpg" alt=""
+            srcset="images/wordpress@1x.jpg 1x, images/wordpress@2x.jpg 2x" />
+          <img class="feature__fig" src="images/wordpress@1x.jpg" alt=""
         /></picture>
       </article>
       <article class="container grid grid--1x2 block-feacture">
@@ -234,7 +235,7 @@
             srcset="images/support@1x.webp 1x, images/support@2x.webp 2x" />
           <source
             type="image/png"
-            srcset="images/support@1x.png 1x, images/support@2x.png 2x" />
+            srcset="images/support.jpg 1x, images/support@2x.jpg 2x" />
           <img class="feature__fig" src="images/support.jpg" alt=""
         /></picture>
       </article>
@@ -243,7 +244,7 @@
       <header class="block__header media__header">
         <h2>User-Friendly Control Panel</h2>
       </header>
-      <article class="container grid grid--1x2 block-feacture">
+      <div class="container grid grid--1x2 block-feacture">
         <picture data-aos="slide-right">
           <source
             type="image/webp"
@@ -254,7 +255,7 @@
           <img class="feature__fig" src="images/ipad.png" alt=""
         /></picture>
         <section data-aos="slide-up">
-          <section class="media">
+          <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
                 <use xlink:href="images/sprite.svg#snap"></use>
@@ -268,7 +269,7 @@
                 corporis optio!
               </p>
             </div>
-          </section>
+          </div>
           <section class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
@@ -300,7 +301,7 @@
             </div>
           </section>
         </section>
-      </article>
+      </div>
     </section>
     <section class="block container" data-aos="zoom-in">
       <header class="block__header">
@@ -365,12 +366,12 @@
     <footer class="block--dark footer__block footer">
       <div class="grid container footer__block">
         <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header footer__header">
+          <div class="collapsible__header footer__header">
             <h3 class="collapsible__heading footer__heading">PRODUCTS</h3>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">WordPress Hosting</a></li>
@@ -382,12 +383,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header footer__header">
+          <div class="collapsible__header footer__header">
             <h3 class="collapsible__heading footer__heading">COMPANY</h3>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -401,12 +402,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header footer__header">
+          <div class="collapsible__header footer__header">
             <h3 class="collapsible__heading footer__heading">SUPPORT</h3>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -419,12 +420,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header footer__header">
+          <div class="collapsible__header footer__header">
             <h3 class="collapsible__heading footer__heading">DOMAIN</h3>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Checker</a></li>
@@ -441,7 +442,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
