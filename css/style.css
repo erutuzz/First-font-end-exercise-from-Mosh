@@ -358,6 +358,13 @@ a {
 }
 .media__title {
   margin-top: 0;
+  font-size: 1.8rem;
+}
+.media__header > h2 {
+  color: #fff;
+}
+.media__body > h3 {
+  color: #fff;
 }
 
 /* quote */
@@ -374,11 +381,12 @@ a {
 }
 .quote__image {
   position: relative;
-  bottom: 15px;
+  bottom: 20px;
 }
 .quote__name {
   /* font-family: Montserrat, Arial; */
   margin-bottom: 0;
+  color: var(--color-heading);
 }
 .quote__vocation {
   opacity: 0.4;
@@ -435,6 +443,7 @@ a {
 .callout {
   padding: 3rem;
   border-radius: 5px;
+  transform: translateY(5rem);
 }
 .callout--primary {
   background-color: var(--color-primary);
@@ -518,10 +527,10 @@ a {
   color: #fff;
 }
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 0 80%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0 95%, 100% 100%, 100% 0%);
 }
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 0 100%, 100% 80%, 100% 0%);
+  clip-path: polygon(0% 0%, 0 100%, 100% 95%, 100% 0%);
 }
 
 /* navigation */
@@ -596,7 +605,7 @@ a {
     padding-top: 0;
   }
   .hero__content {
-    text-align: center;
+    text-align: left;
     align-self: center;
   }
 }
@@ -618,7 +627,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .domain__pricing {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -629,7 +638,7 @@ a {
 
 /* plan block */
 .block-plan {
-  margin: 4rem 3rem;
+  margin: 4rem auto;
   gap: 8rem 5rem;
 }
 .block-plan .card {
@@ -661,6 +670,7 @@ a {
 /* footer */
 .footer {
   background-color: #232323;
+  padding-top: 10rem;
 }
 .footer__section {
   margin: 2rem;
@@ -686,11 +696,16 @@ a {
   width: 100%;
   max-width: 230px;
 }
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
 @media screen and (min-width: 768px) {
   .footer__block {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .footer__section {
+    padding-top: ;
     border-bottom: 0;
   }
   .footer__section .collapsible__content {
